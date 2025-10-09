@@ -1,299 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel in Our Tourism Ships - Mary Anderson</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        /* --- CUSTOM COLOR & CONFIGURATION --- */
-        :root {
-            --color-primary: #00bcd4; /* Vibrant Teal/Light Blue */
-            --color-secondary: #0f1c4e; /* Deep Navy Blue/Royal Purple */
-        }
-        
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary': 'var(--color-primary)',
-                        'secondary': 'var(--color-secondary)',
-                        'accent-light': '#e0f7fa',
-                    },
-                    backgroundImage: {
-                        'hero-water': "linear-gradient(to bottom, #00bcd480, #1ed8d380), url('images/hero_background_placeholder.jpg')",
-                    }
-                }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel in Our Tourism Ships - Mary Anderson</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+:root {
+    --color-primary: #00bcd4;
+    --color-secondary: #0f1c4e;
+}
+
+tailwind.config = {
+    theme: {
+        extend: {
+            colors: {
+                'primary': 'var(--color-primary)',
+                'secondary': 'var(--color-secondary)',
+                'accent-light': '#e0f7fa',
+            },
+            backgroundImage: {
+                'hero-water': "linear-gradient(to bottom, #00bcd480, #1ed8d380), url('images/hero_background_placeholder.jpg')",
             }
         }
+    }
+}
 
-        /* --- Custom CSS for Animation --- */
-        /* Keyframes for a smooth fade-in/fade-out */
-        @keyframes fadeInOut {
-            0% { opacity: 0; transform: translateY(10px); }
-            10% { opacity: 1; transform: translateY(0); }
-            90% { opacity: 1; transform: translateY(0); }
-            100% { opacity: 0; transform: translateY(-10px); }
-        }
+/* Fade-slide animation */
+@keyframes fadeSlide {
+    0% { opacity: 0; transform: translateY(20px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+.animate-fade-slide {
+    animation: fadeSlide 5s ease-in-out infinite;
+}
 
-        /* Class to apply the animation - Must be applied by JavaScript */
-        .animate-text-cycle {
-            animation: fadeInOut 5s ease-in-out infinite; /* 5s duration matches the JS interval */
-        }
-        
-        /* Package Card Styles */
-        .package-card {
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-        .open-deck { background-image: url('./images/download.jpg'); }
-        .business-class { background-image: url('./images/download.jpg'); }
-        .lounge-class { background-image: url('./images/download.jpg'); }
-        .vip-cabin { background-image: url('./images/download.jpg'); }
-        .economy-class { background-image: url('./images/download.jpg'); }
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.4);
-            transition: background-color 0.3s;
-        }
-        .package-card:hover .overlay {
-            background-color: rgba(0, 0, 0, 0.6);
-        }
-    </style>
+/* Package Card Styles */
+.package-card { background-size: cover; background-position: center; position: relative; }
+.open-deck { background-image: url('./images/download.jpg'); }
+.business-class { background-image: url('./images/download.jpg'); }
+.lounge-class { background-image: url('./images/download.jpg'); }
+.vip-cabin { background-image: url('./images/download.jpg'); }
+.economy-class { background-image: url('./images/download.jpg'); }
+
+.overlay { background-color: rgba(0,0,0,0.4); transition: background-color 0.3s; }
+.package-card:hover .overlay { background-color: rgba(0,0,0,0.6); }
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+</style>
 </head>
 <body>
 
-    <header class="bg-hero-water bg-cover bg-center text-white pb-24 relative overflow-hidden">
-    
-    <nav class="flex justify-between items-center px-6 lg:px-12 py-4 bg-black bg-opacity-30">
-        <div class="logo flex items-center"><img src="./images/download (1).jpg" alt="Tiger Tours Logo" class="h-8 rounded-full ring-2 ring-primary ring-offset-2 ring-offset-black">
-            <span class="ml-2 text-xl font-bold text-white"><span class="text-red-500">Mary</span> <span class="text-purple-500">Anderson</span>
+<!-- HERO HEADER -->
+<header class="bg-hero-water bg-cover bg-center text-white pb-24 relative overflow-hidden">
+    <!-- NAVBAR -->
+    <nav class="flex justify-between items-center px-6 lg:px-12 py-4 bg-black bg-opacity-30 fixed w-full z-50">
+        <div class="logo flex items-center">
+            <img src="./images/download (1).jpg" alt="Tiger Tours Logo" class="h-8 rounded-full ring-2 ring-primary ring-offset-2 ring-offset-black">
+            <span class="ml-2 text-xl font-bold text-white">
+                <span class="text-red-500">Mary</span> <span class="text-purple-500">Anderson</span>
+            </span>
         </div>
-
         <div class="flex items-center space-x-4">
             <div class="hidden lg:flex space-x-8 text-sm font-semibold">
-                <a href="#" class="text-black hover:text-primary transition duration-200">Ship</a>
-                <a href="#" class="text-black hover:text-primary transition duration-200">Hotels</a>
-                <a href="#" class="text-black hover:text-primary transition duration-200">Restaurants</a>
-                <a href="https://sonargaontourism.com/" class="text-red-500 hover:text-primary transition duration-200">Sonargoan Tourism</a>
+                <a href="#ships" class="text-black hover:text-primary transition duration-200">Ship</a>
+                <a href="#hotels" class="text-black hover:text-primary transition duration-200">Hotels</a>
+                <a href="#restaurants" class="text-black hover:text-primary transition duration-200">Restaurants</a>
             </div>
-
             <a href="#" class="bg-primary hover:bg-teal-500 text-black text-sm px-5 py-2 rounded-md transition duration-300 shadow-lg">Sign In</a>
-
-            <button class="lg:hidden text-2xl text-black">
-                <i class="fas fa-bars"></i>
-            </button>
+            <button class="lg:hidden text-2xl text-black"><i class="fas fa-bars"></i></button>
         </div>
     </nav>
 
-    <div class="text-center pt-20 px-4">
-        <h1 class="text-4xl lg:text-5xl font-ligh text-black mb-2 font-bold">
-            <span id="dynamic-text">Travel in Our Tourism Ships</span>
+    <!-- HERO CONTENT -->
+    <div class="text-center pt-32 px-4">
+        <h1 class="text-4xl lg:text-5xl font-bold text-black mb-2">
+            Travel in Our Tourism
+            <span id="dynamic-word" class="text-primary animate-fade-slide">Ships</span>
         </h1>
-        
         <p class="text-lg mb-8 text-black">Experience the journey, not just the destination.</p>
 
-        <form class="flex flex-col lg:flex-row justify-center items-center max-w-6xl mx-auto bg-white rounded-full shadow-xl p-3 space-y-2 lg:space-y-0 lg:space-x-2">
-            <input type="text" placeholder="From (e.g., Cox's Bazar)" class="w-full lg:w-1/5 py-3 px-5 border-0 focus:ring-0 text-gray-900 rounded-full text-center placeholder-gray-500">
-            <input type="text" placeholder="To (e.g., Saint Martin)" class="w-full lg:w-1/5 py-3 px-5 border-0 focus:ring-0 text-gray-900 rounded-full text-center placeholder-gray-500">
-            <input type="date" value="2024-01-13" class="w-full lg:w-1/5 py-3 px-5 border-0 focus:ring-0 text-gray-900 rounded-full text-center uppercase">
-            <input type="date" value="2024-01-10" class="w-full lg:w-1/5 py-3 px-5 border-0 focus:ring-0 text-gray-900 rounded-full text-center uppercase">
-            <input type="number" placeholder="Tickets" value="1" class="w-full lg:w-auto py-3 px-5 border-0 focus:ring-0 text-gray-900 rounded-full text-center placeholder-gray-500">
-            <button type="submit" class="bg-primary hover:bg-teal-500 text-white p-4 rounded-full transition duration-300 lg:w-auto w-1/2">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
-
-        <div class="mt-8 text-xl font-semibold">
-            <a href="tel:+01901378925" class="inline-block py-2 px-4 rounded-full bg-black bg-opacity-30 hover:bg-opacity-40 transition text-white">
-                <i class="fas fa-phone-alt mr-2"></i> 01901378925
-            </a>
+        <!-- Countdown Timer -->
+        <div class="mt-8 text-center">
+            <h2 class="text-2xl font-semibold text-black mb-2">Next Trip Starts In:</h2>
+            <div id="trip-countdown" class="text-4xl font-mono font-bold text-black"></div>
         </div>
     </div>
 </header>
 
-    <section class="text-center py-12">
-        <img src="./images/download (1).jpg" alt="Big Cruiser and LCT Royal Ship" class="max-w-4xl w-full mx-auto rounded-lg shadow-2xl">
-        <p class="mt-4 italic text-gray-600">Sailing the Bengal Bay with comfort and class.</p>
-    </section>
-
-    <section class="flex flex-col md:flex-row justify-center items-center max-w-5xl mx-auto py-10 px-6">
-        
-        <div class="flex flex-col items-center text-center p-4">
-            <div class="p-5 rounded-full bg-accent-light text-secondary text-3xl mb-3">
-                <i class="fas fa-box-open"></i>
-            </div>
-            <h4 class="font-bold text-lg text-secondary">1. Choose Package</h4>
-            <p class="text-sm text-gray-600 mt-1">Select your preferred cabin class and departure.</p>
-        </div>
-        <i class="fas fa-arrow-right text-gray-300 text-2xl mx-6 hidden md:block"></i>
-        <i class="fas fa-arrow-down text-gray-300 text-2xl my-4 block md:hidden"></i>
-
-        <div class="flex flex-col items-center text-center p-4">
-            <div class="p-5 rounded-full bg-accent-light text-secondary text-3xl mb-3">
-                <i class="fas fa-user-circle"></i>
-            </div>
-            <h4 class="font-bold text-lg text-secondary">2. Self-Order or Contact Us</h4>
-            <p class="text-sm text-gray-600 mt-1">Enter passenger details or talk to our agents.</p>
-        </div>
-        <i class="fas fa-arrow-right text-gray-300 text-2xl mx-6 hidden md:block"></i>
-        <i class="fas fa-arrow-down text-gray-300 text-2xl my-4 block md:hidden"></i>
-
-        <div class="flex flex-col items-center text-center p-4">
-            <div class="p-5 rounded-full bg-accent-light text-secondary text-3xl mb-3">
-                <i class="fas fa-credit-card"></i>
-            </div>
-            <h4 class="font-bold text-lg text-secondary">3. Pay Online</h4>
-            <p class="text-sm text-gray-600 mt-1">Securely confirm your booking via our payment gateway.</p>
-        </div>
-    </section>
-
-    <section class="bg-gray-50 py-16 px-6">
-        <h2 class="text-3xl font-semibold text-center mb-10 text-secondary">Discover The Packages</h2>
-        <div class="flex flex-wrap justify-center gap-4 lg:gap-6 max-w-7xl mx-auto">
-            
-            <div class="package-card open-deck w-40 h-64 sm:w-48 sm:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
-                <div class="overlay absolute bottom-0 left-0 right-0 p-4 text-white">
-                    <h3 class="font-semibold text-lg">Open Deck</h3>
-                    <p class="text-xs">Enjoy the sea breeze.</p>
-                    <span class="price block font-bold text-xl mt-1 text-primary">1390 Tk</span>
-                </div>
-            </div>
-
-            <div class="package-card business-class w-40 h-64 sm:w-48 sm:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
-                <div class="overlay absolute bottom-0 left-0 right-0 p-4 text-white">
-                    <h3 class="font-semibold text-lg">Business Class</h3>
-                    <p class="text-xs">Comfortable seating.</p>
-                    <span class="price block font-bold text-xl mt-1 text-primary">1590 Tk</span>
-                </div>
-            </div>
-
-            <div class="package-card lounge-class w-40 h-64 sm:w-48 sm:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
-                <div class="overlay absolute bottom-0 left-0 right-0 p-4 text-white">
-                    <h3 class="font-semibold text-lg">Lounge Seating</h3>
-                    <p class="text-xs">Spacious, modern.</p>
-                    <span class="price block font-bold text-xl mt-1 text-primary">1690 Tk</span>
-                </div>
-            </div>
-
-            <div class="package-card vip-cabin w-40 h-64 sm:w-48 sm:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
-                <div class="overlay absolute bottom-0 left-0 right-0 p-4 text-white">
-                    <h3 class="font-semibold text-lg">VIP Cabin</h3>
-                    <p class="text-xs">Private luxury suite.</p>
-                    <span class="price block font-bold text-xl mt-1 text-primary">5000 Tk</span>
-                </div>
-            </div>
-            
-            <div class="package-card economy-class w-40 h-64 sm:w-48 sm:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
-                <div class="overlay absolute bottom-0 left-0 right-0 p-4 text-white">
-                    <h3 class="font-semibold text-lg">Economy Class</h3>
-                    <p class="text-xs">Affordable standard.</p>
-                    <span class="price block font-bold text-xl mt-1 text-primary">1190 Tk</span>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-
-    <section class="py-16 px-6">
-        <h2 class="text-3xl font-semibold text-center mb-10 text-secondary">Happy Customers</h2>
-        <div class="max-w-4xl mx-auto bg-black rounded-xl p-4 shadow-2xl">
-            <div class="relative w-full h-96 bg-gray-900 flex justify-center items-center rounded-lg cursor-pointer bg-cover bg-center" style="background-image: url('https://youtu.be/zZhcNzlqd3M');">
-                <i class="fas fa-play-circle text-white text-6xl opacity-80 hover:opacity-100 transition duration-300"></i>
+<!-- PACKAGES SECTION -->
+<section class="bg-gray-50 py-16 px-6" id="ships">
+    <h2 class="text-3xl font-semibold text-center mb-10 text-secondary">Discover Our Ships</h2>
+    <div class="flex flex-wrap justify-center gap-4 lg:gap-6 max-w-7xl mx-auto">
+        <div class="package-card open-deck w-40 h-64 sm:w-48 sm:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+            <div class="overlay absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h3 class="font-semibold text-lg">Open Deck</h3>
+                <p class="text-xs">Enjoy the sea breeze.</p>
+                <span class="price block font-bold text-xl mt-1 text-primary">1390 Tk</span>
             </div>
         </div>
-    </section>
+        <div class="package-card business-class w-40 h-64 sm:w-48 sm:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+            <div class="overlay absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h3 class="font-semibold text-lg">Business Class</h3>
+                <p class="text-xs">Comfortable seating.</p>
+                <span class="price block font-bold text-xl mt-1 text-primary">1590 Tk</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-     <footer class="bg-secondary text-black py-10 px-6 lg:px-16">
-        <div class="max-w-6xl mx-auto flex flex-wrap justify-between">
-            
-            <div class="w-1/2 md:w-1/4 mb-6">
-                <h4 class="font-bold text-lg mb-4 border-b-2 border-primary pb-1">Tour Operations</h4>
-                <ul class="text-black text-sm space-y-2">
-                    <li><a href="#" class="hover:text-primary transition">Route Map & Ports</a></li>
-                    <li><a href="#" class="hover:text-primary transition">Ship Schedule</a></li>
-                    <li><a href="#" class="hover:text-primary transition">Safety Protocols</a></li>
-                    <li><a href="#" class="hover:text-primary transition">Group Bookings</a></li>
-                </ul>
-            </div>
+<section class="bg-gray-100 py-16 px-6" id="hotels">
+    <h2 class="text-3xl font-semibold text-center mb-10 text-secondary">Explore Our Hotels</h2>
+    <div class="flex flex-wrap justify-center gap-4 lg:gap-6 max-w-7xl mx-auto">
+        <div class="package-card lounge-class w-40 h-64 sm:w-48 sm:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+            <div class="overlay absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h3 class="font-semibold text-lg">Lounge Hotel</h3>
+                <p class="text-xs">Spacious, modern rooms.</p>
+                <span class="price block font-bold text-xl mt-1 text-primary">1690 Tk</span>
+            </div>
+        </div>
+        <div class="package-card vip-cabin w-40 h-64 sm:w-48 sm:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+            <div class="overlay absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h3 class="font-semibold text-lg">VIP Suite</h3>
+                <p class="text-xs">Luxury private rooms.</p>
+                <span class="price block font-bold text-xl mt-1 text-primary">5000 Tk</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <div class="w-1/2 md:w-1/4 mb-6">
-                <h4 class="font-bold text-lg mb-4 border-b-2 border-primary pb-1">Information</h4>
-                <ul class="text-black text-sm space-y-2">
-                    <li><a href="#" class="hover:text-primary transition">FAQs & Support</a></li>
-                    <li><a href="#" class="hover:text-primary transition">Refund Policy</a></li>
-                    <li><a href="#" class="hover:text-primary transition">Terms & Conditions</a></li>
-                    <li><a href="#" class="hover:text-primary transition">Privacy Policy</a></li>
-                </ul>
-            </div>
+<section class="bg-gray-50 py-16 px-6" id="restaurants">
+    <h2 class="text-3xl font-semibold text-center mb-10 text-secondary">Floating Restaurants</h2>
+    <div class="flex flex-wrap justify-center gap-4 lg:gap-6 max-w-7xl mx-auto">
+        <div class="package-card economy-class w-40 h-64 sm:w-48 sm:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+            <div class="overlay absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h3 class="font-semibold text-lg">Seafood Delight</h3>
+                <p class="text-xs">Enjoy meals with ocean view.</p>
+                <span class="price block font-bold text-xl mt-1 text-primary">1190 Tk</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <div class="w-1/2 md:w-1/4 mb-6">
-                <h4 class="font-bold text-lg mb-4 border-b-2 border-primary pb-1">Company</h4>
-                <ul class="text-black text-sm space-y-2">
-                    <li><a href="#" class="hover:text-primary transition">About Us</a></li>
-                    <li><a href="#" class="hover:text-primary transition">Our Fleet</a></li>
-                    <li><a href="#" class="hover:text-primary transition">Careers</a></li>
-                    <li><a href="#" class="hover:text-primary transition">Contact Us</a></li>
-                </ul>
-            </div>
+<!-- FOOTER -->
+<footer class="bg-secondary text-black py-10 px-6 lg:px-16">
+    <div class="text-center pt-6 border-t border-gray-700 mt-6">
+        <p class="text-xs text-black">&copy; 2024 Tiger Tours. All Rights Reserved | Designed By Mary Anderson</p>
+    </div>
+</footer>
 
-            <div class="w-1/2 md:w-1/4 mb-6">
-                <h4 class="font-bold text-lg mb-4 border-b-2 border-primary pb-1">Connect</h4>
-                <div class="flex space-x-4 text-xl">
-                    <a href="https://www.facebook.com/maryandersonrestaurant?rdid=k8gaeSHD7tCjo4u5&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CVZMjheQE%2F#" class="hover:text-primary transition"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="hover:text-primary transition"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="hover:text-primary transition"><i class="fab fa-instagram"></i></a>
-                </div>
-                <p class="text-xs text-gray-500 mt-4">Follow us for updates and offers!</p>
-            </div>
-            
-        </div>
-        <div class="text-center pt-6 border-t border-gray-700 mt-6">
-            <p class="text-xs text-black">&copy; 2024 Tiger Tours. All Rights Reserved | Designed By Hridoy</p>
-        </div>
-    </footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const dynamicWord = document.getElementById('dynamic-word');
+    const words = ["Ships", "Hotels", "Restaurants"];
+    let index = 0;
 
-     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const dynamicTextElement = document.getElementById('dynamic-text');
-            
-            // Array of texts to cycle through
-            const texts = [
-                "Travel in Our Tourism Ships",
-                // FIX: Corrected typo 'Cosatal' to 'Coastal'
-                "Book Our Coastal Hotels", 
-                // FIX: Corrected typo 'Flooting' to 'Floating'
-                "Enjoy Our Floating Restaurants"
-            ];
-            
-            let currentIndex = 0;
-            const cycleInterval = 5000; // 5000 milliseconds = 5 seconds
+    function changeWord() {
+        dynamicWord.classList.remove('animate-fade-slide');
+        void dynamicWord.offsetWidth; // reflow to restart animation
+        dynamicWord.textContent = words[index];
+        dynamicWord.classList.add('animate-fade-slide');
+        index = (index + 1) % words.length;
+    }
 
-            function updateText() {
-                // Remove animation class to restart the cycle for the new text
-                dynamicTextElement.classList.remove('animate-text-cycle');
-                
-                // Trigger reflow/re-paint to ensure the animation restarts (a common JS hack)
-                void dynamicTextElement.offsetWidth;
+    setInterval(changeWord, 5000);
 
-                // Change the text content
-                dynamicTextElement.textContent = texts[currentIndex];
-                
-                // Add animation class back to start the fade-in
-                dynamicTextElement.classList.add('animate-text-cycle');
-                
-                // Move to the next text index
-                currentIndex = (currentIndex + 1) % texts.length;
-            }
+    // Countdown Timer
+    const countdownElement = document.getElementById('trip-countdown');
+    function getNextSaturday10AM() {
+        const now = new Date();
+        const today = now.getDay();
+        const daysUntilSaturday = (6 - today + 7) % 7;
+        let nextSaturday = new Date(now);
+        nextSaturday.setDate(now.getDate() + daysUntilSaturday);
+        nextSaturday.setHours(10,0,0,0);
+        if(today === 6 && now < nextSaturday) nextSaturday.setDate(now.getDate());
+        return nextSaturday;
+    }
 
-            // Initialize the first text and start the cycle
-            // We call updateText immediately to start the first animation
-            updateText(); 
-            
-            // Set the interval for continuous cycling
-            setInterval(updateText, cycleInterval);
-        });
-    </script>
+    function updateCountdown() {
+        const now = new Date();
+        const tripTime = getNextSaturday10AM();
+        const diff = tripTime - now;
+        if(diff <= 0) { countdownElement.textContent = "Trip Started!"; return; }
+        const hours = Math.floor(diff/(1000*60*60));
+        const minutes = Math.floor((diff%(1000*60*60))/(1000*60));
+        const seconds = Math.floor((diff%(1000*60))/1000);
+        countdownElement.textContent = `${hours.toString().padStart(2,'0')}:${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2,'0')}`;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+});
+</script>
+
 </body>
 </html>
