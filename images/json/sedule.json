@@ -1,0 +1,194 @@
+{
+  "title": "Upcoming Schedule",
+  "subtitle": "Cox's Bazar(Inani)-Saint Martin-Cox's Bazar(Inani)",
+  "note": "Schedule may change with tidal state",
+  "ferry_name": "Bay Cruiser One Schedule",
+  "schedule": [
+    {
+      "date": "1-Jan-2025",
+      "day": "Wednesday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "8:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "2-Jan-2025",
+      "day": "Thursday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "8:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "3-Jan-2025",
+      "day": "Friday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "8:30 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "4-Jan-2025",
+      "day": "Saturday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "9:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "4:30 PM"
+    },
+    {
+      "date": "5-Jan-2025",
+      "day": "Sunday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "9:30 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "4:30 PM"
+    },
+    {
+      "date": "6-Jan-2025",
+      "day": "Monday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "9:30 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "4:30 PM"
+    },
+    {
+      "date": "7-Jan-2025",
+      "day": "Tuesday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "6:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "8-Jan-2025",
+      "day": "Wednesday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "7:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "9-Jan-2025",
+      "day": "Thursday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "7:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "10-Jan-2025",
+      "day": "Friday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "7:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "11-Jan-2025",
+      "day": "Saturday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "7:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "12-Jan-2025",
+      "day": "Sunday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "7:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "13-Jan-2025",
+      "day": "Monday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "7:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "14-Jan-2025",
+      "day": "Tuesday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "7:30 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "15-Jan-2025",
+      "day": "Wednesday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "8:30 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:30 PM"
+    },
+    {
+      "date": "16-Jan-2025",
+      "day": "Thursday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "9:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:30 PM"
+    },
+    {
+      "date": "17-Jan-2025",
+      "day": "Friday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "9:30 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "4:30 PM"
+    },
+    {
+      "date": "18-Jan-2025",
+      "day": "Saturday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "9:30 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "4:30 PM"
+    },
+    {
+      "date": "19-Jan-2025",
+      "day": "Sunday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "9:30 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "4:30 PM"
+    },
+    {
+      "date": "20-Jan-2025",
+      "day": "Monday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "9:30 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "4:30 PM"
+    },
+    {
+      "date": "21-Jan-2025",
+      "day": "Tuesday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "6:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "22-Jan-2025",
+      "day": "Wednesday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "7:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "23-Jan-2025",
+      "day": "Thursday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "7:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "24-Jan-2025",
+      "day": "Friday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "7:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "25-Jan-2025",
+      "day": "Saturday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "7:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "26-Jan-2025",
+      "day": "Sunday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "7:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "27-Jan-2025",
+      "day": "Monday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "7:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "28-Jan-2025",
+      "day": "Tuesday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "8:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "29-Jan-2025",
+      "day": "Wednesday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "8:00 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "30-Jan-2025",
+      "day": "Thursday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "8:30 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    },
+    {
+      "date": "31-Jan-2025",
+      "day": "Friday",
+      "departure_from_nuniachora_bwta_ghat_to_st_martins_island": "8:30 AM",
+      "departure_from_st_martins_island_to_nuniachora_bwta_ghat": "3:00 PM"
+    }
+  ]
+}
