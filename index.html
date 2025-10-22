@@ -118,12 +118,12 @@
 
       <!-- Desktop Nav Links -->
       <div class="hidden md:flex items-center gap-4 font-bold">
-        <a href="#ships" class="hover:text-primary">Ships</a>
-        <a href="#hotels" class="hover:text-primary">Hotels</a>
-        <a href="#restaurants" class="hover:text-primary">Restaurants</a>
+        <a href="https://sonargaontourism.com/ships/" class="hover:text-primary ml-8"><span>Ships</span></a>
+        <a href="https://sonargaontourism.com/contact/" class="hover:text-primary ml-4"><span>Contact</span></a>
+        <a href="https://sonargaontourism.com/faq/" class="hover:text-primary ml-4"><span>FAQ</span></a>
 
         <a href="https://sonargaontourism.com/shop/">
-          <button class="px-6 py-3 rounded-3xl font-bold text-white bg-[#381d92] relative overflow-hidden hover:text-[#381d92] transition-all duration-300">
+          <button class="px-6 py-3 ml- rounded-3xl font-bold text-white bg-[#381d92] relative overflow-hidden hover:text-[#381d92] transition-all duration-300">
             <span class="absolute inset-0 bg-gradient-to-r from-[#381d92] via-indigo-500 to-blue-500 opacity-75 blur-lg animate-pulse"></span>
             <span class="relative">Reserve Now</span>
           </button>
@@ -234,95 +234,91 @@
   </div>
 </header>
 
-
-<section class="bg-white py-8 px-6 overflow-hidden">
-  <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-3xl font-black text-blue-500 mb-6">
+<section class="bg-white py-4 overflow-hidden">
+  <div class="max-w-7xl mx-auto flex items-center gap-6 px-6">
+    <!-- 🟦 Fixed Title on Left -->
+    <div class="font-sans font-semibold text-[20px] text-blue-700 flex-shrink-0 w-60">
       Our Business Associates
-    </h2>
+    </div>
 
-    <!-- Moving Logos Container -->
-    <div class="relative overflow-hidden">
-      <div class="flex animate-scroll space-x-12" id="scroll-track">
-        
-        <!-- Associate Logos -->
-        <div class="flex flex-col items-center space-y-2">
-          <img src="./images/1.png" alt="Bangladesh Parjatan Corporation" class="h-16 object-contain" />
-          <p class="text-sm font-bold text-gray-700 text-center leading-tight">
-            Bangladesh <br> Parjatan <br> Corporation
+    <!-- 🟨 Scrolling Logos -->
+    <div class="scroll-container relative overflow-hidden flex-1">
+      <div class="animate-scroll flex items-center gap-10">
+        <!-- Set 1 -->
+        <div class="flex items-center gap-2">
+          <img src="images/1.png" alt="Bangladesh Parjatan Corporation" class="h-12 object-contain" />
+          <p class="text-sm font-semibold text-gray-800 leading-tight text-center">
+            Bangladesh <br />Parjatan <br />Corporation
           </p>
         </div>
 
-        <div class="flex flex-col items-center space-y-2">
-          <img src="./images/2.png" alt="BIWTA" class="h-16 object-contain" />
-          <p class="text-sm font-bold text-gray-700 text-center leading-tight">
-            Bangladesh Inland <br> Water Transport <br> Authority (BIWTA)
+        <div class="flex items-center gap-2">
+          <img src="images/2.png" alt="BIWTA" class="h-12 object-contain" />
+          <p class="text-sm font-semibold text-gray-800 leading-tight text-center">
+            Bangladesh Inland <br />Water Transport <br />Authority (BIWTA)
           </p>
         </div>
 
-        <div class="flex flex-col items-center space-y-2">
-          <img src="./images/3.png" alt="BIWTA 2" class="h-16 object-contain" />
-          <p class="text-sm font-bold text-gray-700 text-center leading-tight">
-            Bangladesh Inland <br> Water Transport <br> Authority (BIWTA)
+        <div class="flex items-center gap-2">
+          <img src="images/3.png" alt="BIWTC" class="h-12 object-contain" />
+          <p class="text-sm font-semibold text-gray-800 leading-tight text-center">
+            Bangladesh Inland <br />Water Transport <br />Corporation (BIWTC)
           </p>
         </div>
 
-        <div class="flex flex-col items-center space-y-2">
-          <img src="./images/4.png" alt="River Transport Association" class="h-16 object-contain" />
-          <p class="text-sm font-bold text-gray-700 text-center leading-tight">
-            River Transport <br> Association
+        <div class="flex items-center gap-2">
+          <img src="images/4.png" alt="Bangladesh Tourism Board" class="h-12 object-contain" />
+          <p class="text-sm font-semibold text-gray-800 leading-tight text-center">
+            Bangladesh <br />Tourism <br />Board
           </p>
         </div>
 
-        <div class="flex flex-col items-center space-y-2">
-          <img src="./images/5.png" alt="Marine Tourism Development Board" class="h-16 object-contain" />
-          <p class="text-sm font-bold text-gray-700 text-center leading-tight">
-            Marine Tourism <br> Development Board
+        <div class="flex items-center gap-2">
+          <img src="images/5.png" alt="Marine Tourism Association" class="h-12 object-contain" />
+          <p class="text-sm font-semibold text-gray-800 leading-tight text-center">
+            Marine <br />Tourism <br />Association
           </p>
         </div>
 
-        <!-- Duplicate full set for seamless loop -->
-        <div class="flex flex-col items-center space-y-2">
-          <img src="./images/1.png" alt="Bangladesh Parjatan Corporation" class="h-16 object-contain" />
-          <p class="text-sm font-bold text-gray-700 text-center leading-tight">
-            Bangladesh <br> Parjatan <br> Corporation
+        <!-- 🔁 Duplicate logos for infinite scroll -->
+        <div class="flex items-center gap-2">
+          <img src="images/1.png" class="h-12 object-contain" />
+          <p class="text-sm font-semibold text-gray-800 leading-tight text-center">
+            Bangladesh <br />Parjatan <br />Corporation
           </p>
         </div>
 
-        <div class="flex flex-col items-center space-y-2">
-          <img src="./images/2.png" alt="BIWTA" class="h-16 object-contain" />
-          <p class="text-sm font-bold text-gray-700 text-center leading-tight">
-            Bangladesh Inland <br> Water Transport <br> Authority (BIWTA)
+        <div class="flex items-center gap-2">
+          <img src="images/2.png" class="h-12 object-contain" />
+          <p class="text-sm font-semibold text-gray-800 leading-tight text-center">
+            Bangladesh Inland <br />Water Transport <br />Authority (BIWTA)
           </p>
         </div>
 
-        <div class="flex flex-col items-center space-y-2">
-          <img src="./images/3.png" alt="BIWTA 2" class="h-16 object-contain" />
-          <p class="text-sm font-bold text-gray-700 text-center leading-tight">
-            Bangladesh Inland <br> Water Transport <br> Authority (BIWTA)
+        <div class="flex items-center gap-2">
+          <img src="images/3.png" class="h-12 object-contain" />
+          <p class="text-sm font-semibold text-gray-800 leading-tight text-center">
+            Bangladesh Inland <br />Water Transport <br />Corporation (BIWTC)
           </p>
         </div>
 
-        <div class="flex flex-col items-center space-y-2">
-          <img src="./images/4.png" alt="River Transport Association" class="h-16 object-contain" />
-          <p class="text-sm font-bold text-gray-700 text-center leading-tight">
-            River Transport <br> Association
+        <div class="flex items-center gap-2">
+          <img src="images/4.png" class="h-12 object-contain" />
+          <p class="text-sm font-semibold text-gray-800 leading-tight text-center">
+            Bangladesh <br />Tourism <br />Board
           </p>
         </div>
 
-        <div class="flex flex-col items-center space-y-2">
-          <img src="./images/5.png" alt="Marine Tourism Development Board" class="h-16 object-contain" />
-          <p class="text-sm font-bold text-gray-700 text-center leading-tight">
-            Marine Tourism <br> Development Board
+        <div class="flex items-center gap-2">
+          <img src="images/5.png" class="h-12 object-contain" />
+          <p class="text-sm font-semibold text-gray-800 leading-tight text-center">
+            Marine <br />Tourism <br />Association
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
-
 
 <section>
   <div class="max-w-7xl mx-auto py-12 px-6">
@@ -335,15 +331,16 @@
                 
                 <div class="w-full sm:w-80 border rounded-xl shadow-lg bg-white relative">
                     <span class="absolute top-0 right-0 mt-4 mr-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">SALE</span>
-                    <figure class="px-4 pt-4">
+                    <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/"><figure class="px-4 pt-4">
                         <img src="/images/10.webp" alt="Lunch & River Cruise" class="rounded-xl w-full h-40 object-cover" />
-                    </figure>
+                    </figure></a>
                     <div class="card-body px-4 pb-4 items-center text-center">
-                        <p class="text-gray-700 text-sm leading-snug font-bold">
+                      <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/"><p class="text-gray-700 text-sm leading-snug font-bold">
                             Lunch & River Cruise Package (Mary Anderson VIP Jetty ghat – Shitalakha Mohona) ভোজন + নদীভ্রমণ প্যাকেজ
                         </p>
                         <p class="text-gray-500 line-through mt-2 text-sm">1,400.00৳</p>
-                        <p class="text-primary text-lg font-bold mt-1">1,300.00৳</p>
+                        <p class="text-primary text-lg font-bold mt-1">1,300.00৳</p></a>
+                        
                         <div class="card-actions mt-4">
                           <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/"><button class="bg-purple-800 text-white px-6 py-2 rounded-lg hover:bg-purple-700 font-semibold text-sm">
                                 Select options
@@ -355,15 +352,15 @@
 
                 <div class="w-full sm:w-80 border rounded-xl shadow-lg bg-white relative">
                     <span class="absolute top-0 right-0 mt-4 mr-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">SALE</span>
-                    <figure class="px-4 pt-4">
+                    <a href="https://sonargaontourism.com/product/maryandersoncruisepackage/"><figure class="px-4 pt-4">
                         <img src="/images/91.webp" alt="Mary Anderson Cruise" class="rounded-xl w-full h-40 object-cover" />
-                    </figure>
+                    </figure></a>
                     <div class="card-body px-4 pb-4 items-center text-center">
-                        <p class="text-gray-700 text-sm leading-snug font-bold">
+                      <a href="https://sonargaontourism.com/product/maryandersoncruisepackage/"><p class="text-gray-700 text-sm leading-snug font-bold">
                             Mary Anderson Cruise Lunch/Dinner Package
                         </p>
                         <p class="text-gray-500 line-through mt-2 text-sm">900.00৳</p>
-                        <p class="text-primary text-lg font-bold mt-1">790.00৳</p>
+                        <p class="text-primary text-lg font-bold mt-1">790.00৳</p></a>
                         <div class="card-actions mt-4">
                           <a href="https://sonargaontourism.com/product/maryandersoncruisepackage/"><button class="bg-purple-800 text-white px-6 py-2 rounded-lg hover:bg-purple-700 font-semibold text-sm">
                                 Select options
@@ -487,33 +484,33 @@
   <!-- Card 2 -->
   <div class="card card-side bg-white shadow-xl rounded-2xl overflow-hidden max-w-4xl mx-auto mt-4 flex flex-col md:flex-row">
     <figure class="flex-shrink-0 w-full md:w-80">
-      <a href="#" id="bookNow">
+      <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
         <img class="w-full h-48 sm:h-52 md:h-52 object-cover rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none" src="/Cabin/Top Open Class.png" alt="Seat Plan" />
       </a>
     </figure>
     <div class="card-body text-white bg-gradient-to-r from-[#0E0F2C] to-[#2E3192] justify-between flex-1 p-4 sm:p-6 md:p-6 rounded-b-2xl md:rounded-r-2xl md:rounded-bl-none">
       <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-        <a href="#" id="bookNow">
+        <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
           <div>
-            <h2 class="card-title text-lg font-bold">Top Open Class</h2>
-            <p class="text-sm text-gray-200">Quantity: <span class="font-semibold text-white">120</span></p>
+            <h2 class="card-title text-lg font-bold">Main Class</h2>
+            <p class="text-sm text-gray-200">Quantity: <span class="font-semibold text-white">166</span></p>
           </div>
         </a>
-        <a href="#" id="bookNow">
+        <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
           <div class="text-right">
             <h2 class="card-title text-lg font-bold">One Way <span class="mx-2 sm:mx-4">|</span> Round Trip</h2>
             <p class="text-sm mt-1 flex flex-col sm:flex-row sm:justify-end gap-1">
-              <span class="line-through mr-2 sm:mr-4">2,000৳</span>
-              <span class="font-bold text-yellow-300">1,200৳</span>
+              <span class="line-through mr-2 sm:mr-4">2,700৳</span>
+              <span class="font-bold text-yellow-300">1,450৳</span>
             </p>
           </div>
         </a>
       </div>
       <div class="card-actions justify-center md:justify-end mt-4 gap-4 flex flex-col sm:flex-row">
-        <a href="#" id="bookNow">
+        <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
           <button class="btn btn-warning px-6 font-semibold w-full sm:w-auto">Book Now</button>
         </a>
-        <a href="#" id="Massenger">
+        <a href="https://business.facebook.com/latest/inbox/all?asset_id=197083386826131&business_id=470226539511813&selected_item_id=100014693804997&thread_type=FB_MESSAGE" id="Massenger">
           <button class="btn btn-outline btn-warning px-6 font-semibold w-full sm:w-auto">Massenger</button>
         </a>
       </div>
@@ -523,33 +520,33 @@
   <!-- Card 3 -->
   <div class="card card-side bg-white shadow-xl rounded-2xl overflow-hidden max-w-4xl mx-auto mt-4 flex flex-col md:flex-row">
     <figure class="flex-shrink-0 w-full md:w-80">
-      <a href="#" id="bookNow">
+      <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
         <img class="w-full h-48 sm:h-52 md:h-52 object-cover rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none" src="/Cabin/Business Class.png" alt="Seat Plan" />
       </a>
     </figure>
     <div class="card-body text-white bg-gradient-to-r from-[#0E0F2C] to-[#2E3192] justify-between flex-1 p-4 sm:p-6 md:p-6 rounded-b-2xl md:rounded-r-2xl md:rounded-bl-none">
       <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-        <a href="#" id="bookNow">
+        <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
           <div>
-            <h2 class="card-title text-lg font-bold">Business Class</h2>
-            <p class="text-sm text-gray-200">Quantity: <span class="font-semibold text-white">80</span></p>
+            <h2 class="card-title text-lg font-bold">Main Class</h2>
+            <p class="text-sm text-gray-200">Quantity: <span class="font-semibold text-white">166</span></p>
           </div>
         </a>
-        <a href="#" id="bookNow">
+        <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
           <div class="text-right">
             <h2 class="card-title text-lg font-bold">One Way <span class="mx-2 sm:mx-4">|</span> Round Trip</h2>
             <p class="text-sm mt-1 flex flex-col sm:flex-row sm:justify-end gap-1">
-              <span class="line-through mr-2 sm:mr-4">3,000৳</span>
-              <span class="font-bold text-yellow-300">1,800৳</span>
+              <span class="line-through mr-2 sm:mr-4">2,700৳</span>
+              <span class="font-bold text-yellow-300">1,450৳</span>
             </p>
           </div>
         </a>
       </div>
       <div class="card-actions justify-center md:justify-end mt-4 gap-4 flex flex-col sm:flex-row">
-        <a href="#" id="bookNow">
+        <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
           <button class="btn btn-warning px-6 font-semibold w-full sm:w-auto">Book Now</button>
         </a>
-        <a href="#" id="Massenger">
+        <a href="https://business.facebook.com/latest/inbox/all?asset_id=197083386826131&business_id=470226539511813&selected_item_id=100014693804997&thread_type=FB_MESSAGE" id="Massenger">
           <button class="btn btn-outline btn-warning px-6 font-semibold w-full sm:w-auto">Massenger</button>
         </a>
       </div>
@@ -559,33 +556,33 @@
   <!-- Card 4 -->
   <div class="card card-side bg-white shadow-xl rounded-2xl overflow-hidden max-w-4xl mx-auto mt-4 flex flex-col md:flex-row">
     <figure class="flex-shrink-0 w-full md:w-80">
-      <a href="#" id="bookNow">
+      <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
         <img class="w-full h-48 sm:h-52 md:h-52 object-cover rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none" src="/Cabin/Luxury Class.png" alt="Seat Plan" />
       </a>
     </figure>
     <div class="card-body text-white bg-gradient-to-r from-[#0E0F2C] to-[#2E3192] justify-between flex-1 p-4 sm:p-6 md:p-6 rounded-b-2xl md:rounded-r-2xl md:rounded-bl-none">
       <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-        <a href="#" id="bookNow">
+        <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
           <div>
-            <h2 class="card-title text-lg font-bold">Luxury Class</h2>
-            <p class="text-sm text-gray-200">Quantity: <span class="font-semibold text-white">50</span></p>
+            <h2 class="card-title text-lg font-bold">Main Class</h2>
+            <p class="text-sm text-gray-200">Quantity: <span class="font-semibold text-white">166</span></p>
           </div>
         </a>
-        <a href="#" id="bookNow">
+        <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
           <div class="text-right">
             <h2 class="card-title text-lg font-bold">One Way <span class="mx-2 sm:mx-4">|</span> Round Trip</h2>
             <p class="text-sm mt-1 flex flex-col sm:flex-row sm:justify-end gap-1">
-              <span class="line-through mr-2 sm:mr-4">4,000৳</span>
-              <span class="font-bold text-yellow-300">2,500৳</span>
+              <span class="line-through mr-2 sm:mr-4">2,700৳</span>
+              <span class="font-bold text-yellow-300">1,450৳</span>
             </p>
           </div>
         </a>
       </div>
       <div class="card-actions justify-center md:justify-end mt-4 gap-4 flex flex-col sm:flex-row">
-        <a href="#" id="bookNow">
+        <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
           <button class="btn btn-warning px-6 font-semibold w-full sm:w-auto">Book Now</button>
         </a>
-        <a href="#" id="Massenger">
+        <a href="https://business.facebook.com/latest/inbox/all?asset_id=197083386826131&business_id=470226539511813&selected_item_id=100014693804997&thread_type=FB_MESSAGE" id="Massenger">
           <button class="btn btn-outline btn-warning px-6 font-semibold w-full sm:w-auto">Massenger</button>
         </a>
       </div>
@@ -595,33 +592,33 @@
   <!-- Card 5 -->
   <div class="card card-side bg-white shadow-xl rounded-2xl overflow-hidden max-w-4xl mx-auto mt-4 flex flex-col md:flex-row">
     <figure class="flex-shrink-0 w-full md:w-80">
-      <a href="#" id="bookNow">
+      <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
         <img class="w-full h-48 sm:h-52 md:h-52 object-cover rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none" src="/Cabin/VIP cabin.png" alt="Seat Plan" />
       </a>
     </figure>
     <div class="card-body text-white bg-gradient-to-r from-[#0E0F2C] to-[#2E3192] justify-between flex-1 p-4 sm:p-6 md:p-6 rounded-b-2xl md:rounded-r-2xl md:rounded-bl-none">
       <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-        <a href="#" id="bookNow">
+        <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
           <div>
-            <h2 class="card-title text-lg font-bold">VIP Cabin</h2>
-            <p class="text-sm text-gray-200">Quantity: <span class="font-semibold text-white">20</span></p>
+            <h2 class="card-title text-lg font-bold">Main Class</h2>
+            <p class="text-sm text-gray-200">Quantity: <span class="font-semibold text-white">166</span></p>
           </div>
         </a>
-        <a href="#" id="bookNow">
+        <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
           <div class="text-right">
             <h2 class="card-title text-lg font-bold">One Way <span class="mx-2 sm:mx-4">|</span> Round Trip</h2>
             <p class="text-sm mt-1 flex flex-col sm:flex-row sm:justify-end gap-1">
-              <span class="line-through mr-2 sm:mr-4">5,000৳</span>
-              <span class="font-bold text-yellow-300">3,000৳</span>
+              <span class="line-through mr-2 sm:mr-4">2,700৳</span>
+              <span class="font-bold text-yellow-300">1,450৳</span>
             </p>
           </div>
         </a>
       </div>
       <div class="card-actions justify-center md:justify-end mt-4 gap-4 flex flex-col sm:flex-row">
-        <a href="#" id="bookNow">
+        <a href="https://sonargaontourism.com/product/lunch-river-cruise-package-vip-jetty-ghat-shitalakha-river/" id="bookNow">
           <button class="btn btn-warning px-6 font-semibold w-full sm:w-auto">Book Now</button>
         </a>
-        <a href="#" id="Massenger">
+        <a href="https://business.facebook.com/latest/inbox/all?asset_id=197083386826131&business_id=470226539511813&selected_item_id=100014693804997&thread_type=FB_MESSAGE" id="Massenger">
           <button class="btn btn-outline btn-warning px-6 font-semibold w-full sm:w-auto">Massenger</button>
         </a>
       </div>
@@ -788,7 +785,8 @@
     
     <!-- Logo & Company -->
     <div class="mt-16">
-      <p class="text-lg font-bold uppercase tracking-wider">Sonargaon Tourism</p>
+      <a href="https://sonargaontourism.com/"><p class="text-lg font-bold uppercase tracking-wider">Sonargaon Tourism</p></a>
+      
     </div>
 
     <!-- Social Icons & Contact -->
@@ -798,13 +796,13 @@
       <div class="flex flex-col items-center md:items-start w-full md:w-auto">
   <!-- Logo -->
   <div class="mt-10">
-    <img src="/images/logo.jpg.webp" alt="Sonargaon Tourism Logo" class="object-contain w-32 md:w-40 mr-[500px]" />
+    <a href="https://sonargaontourism.com/"><img src="/images/logo.jpg.webp" alt="Sonargaon Tourism Logo" class="object-contain w-32 md:w-40 mr-[500px]" /></a>
   </div>
 </div>
 <div>
   <div>
     <div class="flex space-x-4 text-xl mt-[-130px] justify-center md:justify-start w-full">
-    <a href="#" aria-label="Facebook" class="hover:text-[#FFD700] transition-colors"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://business.facebook.com/business/loginpage/?next=%2Flatest%2Finbox%2Fall%2F%3Fasset_id%3D197083386826131%26business_id%3D470226539511813%26nav_ref%3Dbiz_unified_f3_login_page_to_mbs&login_options%5B0%5D=FB&login_options%5B1%5D=IG&login_options%5B2%5D=SSO&config_ref=biz_login_tool_flavor_mbs" aria-label="Facebook" class="hover:text-[#FFD700] transition-colors"><i class="fab fa-facebook-f"></i></a>
     <a href="#" aria-label="YouTube" class="hover:text-[#FFD700] transition-colors"><i class="fab fa-youtube"></i></a>
     <a href="#" aria-label="LinkedIn" class="hover:text-[#FFD700] transition-colors"><i class="fab fa-linkedin-in"></i></a>
   </div>
